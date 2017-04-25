@@ -1,0 +1,14 @@
+{
+  "skills" : [
+    {
+      "Frontend" : ["HTML5", "CSS3", "JavaScript & jQuery"]
+    },
+    {
+      "Backend" : ["PHP", "mySQL", "Node.js", "Mongo.db"]
+    },
+    {
+      "WorkFlow" : ["Git", "Gulp", "Bower"]
+    }
+  ]
+
+} 

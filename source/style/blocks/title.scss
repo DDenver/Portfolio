@@ -1,0 +1,22 @@
+.title{
+    font-family: "sansus_webissimo", Arial, sans-serif;
+    color: $main-title-color;
+    font-size: 63px;
+    text-transform: uppercase;
+    padding: 45px 80px;
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+
+    &:after{
+        content: "";
+        display: block;
+        @include centered(x);
+        height: 3px;
+        width: 89px;
+        background-color: $main-fonts-color;
+    }
+}

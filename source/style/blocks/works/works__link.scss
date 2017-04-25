@@ -1,0 +1,20 @@
+.works__link{
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    height: 45px;
+    width: 200px;   
+    padding: 9px 20px 9px 20px; 
+    background-color: $green-text;
+    border-radius: 23px;
+    transition: all, 0.3s;
+    &:hover{
+        background-color: $green-date;
+    }
+}
+
+.works__link-pic{
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}

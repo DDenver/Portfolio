@@ -1,0 +1,22 @@
+.header {
+  height: 595px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__bg-img{
+   width: 100%;
+//    height: 600px;
+}
+
+.hero__title {
+  @include centered(y);
+  text-align: center;
+  width: 100%;
+  opacity: 0.12;
+}
+
+.hero__user-block {
+  @include centered();
+}

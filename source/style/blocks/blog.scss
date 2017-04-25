@@ -1,0 +1,17 @@
+.blog{
+    @extend %clearfix;
+    padding-bottom: 185px;
+}
+
+.blog__triangle-right, .blog__triangle-left{
+    width: 50%;
+    position: relative;
+}
+
+.blog__triangle-left{
+    float: left;
+}
+
+.blog__triangle-right{
+    float: right;
+}

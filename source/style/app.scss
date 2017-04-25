@@ -1,5 +1,21 @@
-body {
-  margin: 0;
-}
+//colors
+$green: #ebefe2;
+$white: #f4f5f0;
+$main-title-color: #373e42;
+$main-fonts-color: #566358;
+$green-text: #4e8839;
+$green-date: #6c9c5a;
+$welcome-green:#122620;
+
+
+//layout setups
+@import "layout/setups";
+@import "layout/fonts";
+
+//mixins
+@import "helpers/mixins";
+
+@import "blocks/**/*";
+
 
 

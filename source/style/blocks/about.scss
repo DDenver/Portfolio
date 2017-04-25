@@ -1,0 +1,27 @@
+.about {
+  @extend %clearfix;
+}
+
+.about__left, .about__right {
+  padding-bottom: 40px;
+  width: 50%;
+  position: relative;
+  height: 920px;
+}
+
+.about__left {
+  background: $green;
+  float: left;
+}
+
+.about__right {
+  background: $white;
+  float: right;
+}
+
+.about__triangles {
+  position: absolute;
+  bottom: 100%;
+  text-align: none;
+}
+

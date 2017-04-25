@@ -1,0 +1,39 @@
+.wrapper
+    header.welcome
+       .welcome__bg
+            img(src="./assets/img/bg/header-bg.jpg", alt="").welcome__bg-img
+       .login-block
+            .user-about.callback__title
+                .user-about__title
+                    .subtitle.login-title
+                        | Авторизуйтесь
+            form(name="form" action="welcome.html").callback__form#callback__form
+                .form__line.form__line_login
+                    input(type="text" name="name" placeholder="Имя").form__input.form__input_white
+                .form__line.form__line_password
+                    input(type="password" name="password" placeholder="Пороль").form__input.form__input_white
+                .login-form__line
+                    label(class="login__choice login__choice-checkbox")
+                        input(class="login__checkbox" type="checkbox" name="check" value="callback")
+                        .login__radio-fake
+                        .login__radio-title 
+                            | Я человек
+                .login-form__line.login-form__line_margin 
+                    .login-robot__check
+                        | Вы точно не робот?
+                    label.login__choice
+                        input(class="login__radio" type="radio" name="radio" value="Yes")
+                        .login__radio-fake
+                        .login__radio-title 
+                            | Да
+                    label.login__choice
+                        input(class="login__radio" type="radio" checked name="radio" value="No")
+                        .login__radio-fake
+                        .login__radio-title
+                            | Не уверен
+                .form__line
+                    input(class="button" type="submit" value="На главную")
+                    input(class="form__button" type="submit" value="Войти")
+                
+    .welcome__copiright
+        | © Владимир Астахов | Создано с любовью в LoftSchool | 2016

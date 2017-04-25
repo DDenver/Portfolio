@@ -1,0 +1,22 @@
+.articles__date{
+    color: $green-date;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.articles__text{
+    line-height: 1.85 !important;
+}
+
+.articles__item{
+    padding-bottom: 68px;
+    margin-bottom: 60px;
+    border-bottom: solid 5px rgba($main-title-color, 0.07);
+    &:last-child{
+        margin-bottom: 0;
+        border-bottom: none;
+        padding-bottom: 45px; 
+    }
+}

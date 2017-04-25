@@ -1,0 +1,12 @@
+.blog__title{
+    color: #fff !important;
+    vertical-align: middle;
+    &:after{
+        background-color: #fff !important;
+    }    
+}
+
+.user__photo_blog{
+    display: block !important;
+    margin: 0 auto !important;
+}

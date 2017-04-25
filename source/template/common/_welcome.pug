@@ -1,0 +1,28 @@
+//- - var obj = { 'works.htnl' : 'Мои работы', 'about.html' : 'Обо мне', 'blog.html' : 'Блог'}
+
+.wrapper
+    header.welcome
+       .welcome__bg
+            img(src="./assets/img/bg/header-bg.jpg", alt="").welcome__bg-img
+       a(href="login.html").welcome-admin__link
+           | Авторизоваться
+       .container
+            ul.socials.welcome__socials
+                    each item in ['vk', 'github', 'in']
+                        li.socials__item
+                            a( href="#" class=`socials__link socials__link_${item}`)
+                                svg(class=`socials__svg welcome__socials-svg`)
+                                    use(xlink:href=`assets/img/icons/sprite.svg#${item}`)
+            
+            .user.hero__user-block.welcome__user-block
+                    .user__photo.welcome__user-photo
+                        .user__photo-avatar
+                            img(src="./assets/img/content/user-avatar.jpg", alt="").user__avatar-img
+                    .user__name.welcome__user-name Владимир Астахов
+                    .user__desc.welcome__ueser-dest Личный сайт веб-разработчика
+            ul.welcome-menu
+                    each item, adress in { 'works.html' : 'Мои работы', 'about.html' : 'Обо мне', 'blog.html' : 'Блог'}
+                        li.welcome-menu__item 
+                            a( href=`${adress}` class=`welcome-menu__link`)=item
+    .welcome__copiright
+        | © Владимир Астахов | Создано с любовью в LoftSchool | 2016

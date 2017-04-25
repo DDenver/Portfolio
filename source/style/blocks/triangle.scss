@@ -1,0 +1,18 @@
+.triangle {
+  height: 100px;
+  width: 100%;
+
+  &_fill {
+
+    &_green {
+      fill: $green;
+    }
+
+    &_white {
+      fill: $white;
+    }
+
+  }
+}
+
+

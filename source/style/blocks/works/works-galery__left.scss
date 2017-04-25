@@ -1,0 +1,16 @@
+.works-galery__left-content{
+    @include centered();
+}
+
+.content{
+    position: relative;
+    height: 600px;
+}
+
+.works-tecnology{
+    color: $green-text;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.42;
+    margin-bottom: 50px;
+}

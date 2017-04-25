@@ -1,0 +1,16 @@
+.welcome-admin__link{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 13px 37px 12px 37px;
+    margin: 20px 20px;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 23px;
+    font-weight: 500;
+    transition: all, .3s;
+    &:hover{
+        background-color: $green-text;
+        border-color: #4a7d37;
+    }
+}

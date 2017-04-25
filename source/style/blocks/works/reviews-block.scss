@@ -1,0 +1,44 @@
+.reviews-block{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.reviews-block__items{
+    margin-bottom: 60px;
+}
+
+.reviews-block__item{
+    width: 398px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.reviews-block__avatar{
+    border-radius: 50%;
+     width: 77px;
+    height: 77px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.reviews-block__avatar-text{
+    color: $main-fonts-color;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.52;
+    margin-bottom: 25px;
+}
+
+.reviews-block__avatar-name{
+    text-align: center;
+    font-family: 'roboto_italic', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $main-title-color;
+    span{
+        color: $green-text;
+        font-weight: 600;
+        line-height: 1.62;
+    }
+}
