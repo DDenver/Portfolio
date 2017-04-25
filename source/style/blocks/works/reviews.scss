@@ -1,0 +1,36 @@
+.reviews{
+    height: 1355px;
+    background-color: #b9b9b9;
+    background-image: url('../../assets/img/bg/reviews.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reviews__title{
+    width: 500px;
+    line-height: 1.2;
+    
+}
+
+.reviews-title{
+    &:after{
+        margin-top: 20px !important;
+    }
+}
+
+.arrow-up__link{
+    position: absolute;
+    bottom: 255px;
+    @include centered(x);
+    height: 16px;
+    width: 26px;
+    transition: all, 0.3s;
+    .arrow-up{
+        height: 16px;
+        width: 26px;
+        display: inline-block;
+        opacity: .851;
+        fill: #fff;
+    }
+}

@@ -1,0 +1,74 @@
+.wrapper
+    header.header
+       .hero__bg
+            img(src="./assets/img/bg/header-bg.jpg", alt="").hero__bg-img
+       ul.socials
+            each item in ['vk', 'github', 'in']
+                li.socials__item
+                    a( href="#" class=`socials__link socials__link_${item}`)
+                      svg(class=`socials__svg`)
+                        use(xlink:href=`assets/img/icons/sprite.svg#${item}`)
+       a(href="#").hamburger
+       a(href="#").down-arrow 
+            img(src="./assets/img/icons/arrow_down.svg", alt="").down-arrow__icon
+       .hero__title
+            img(src="./assets/img/icons/portfolio_header.svg", alt="").section-title
+       .user.hero__user-block
+            .user__photo
+                .user__photo-avatar
+                    img(src="./assets/img/content/user-avatar.jpg", alt="").user__avatar-img
+            .user__name Владимир Астахов
+            .user__desc Личный сайт веб-разработчика
+  
+    section.section.about
+      .about__left
+            svg(
+              viewbox="0 0 1000 100" 
+              preserveAspectRatio="none"
+              class="triangle triangle_fill_green about__triangles")
+              polygon(points="0,0 0,100 1000,100 1000,95")
+            
+            .user-about
+              .title(style="background-image: url('./assets/img/decor/about_header.png')").about__section-title
+                | Обо мне
+              .user-about__picture
+                  img(src="./assets/img/content/user-photo.jpg", alt="").user__photo-img
+              .user-about__title
+                .subtitle
+                  | Кто я
+              .user-about__text
+                p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                p Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+      .about__right
+            svg(
+              viewbox="0 0 1000 100" 
+              preserveAspectRatio="none"
+              class="triangle triangle_fill_white about__triangles")
+              polygon(points="0,100 1000,100 1000,0 0,95")
+            .about-data
+              .about-data__description.about-user-info
+                .about-user-info__title
+                  .subtitle Чем я могу быть вам полезен
+                .about-user-info__text.user-about__text
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam officia incidunt, quisquam sit harum totam, perspiciatis nesciunt, culpa at, laborum nobis error. In doloremque iusto rem, alias incidunt, expedita quos.
+              .about-data__content
+                ul.skills
+                  each skill in skills
+                    each skillsArray, skillName in skill
+                      li.skills__item
+                        .skill-section
+                          .skill-section__title= skillName
+                          ul.skill-section__list
+                            each skillTitle in skillsArray
+                              li.skills-section__item
+                                .skill
+                                  svg(
+                                    class="circles"
+                                    viewBox='0 0 110 110')
+                                    circle(r="45" cx="50%" cy="50%" fill="none" class="circle__first")
+                                    circle(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)" class="circle__second")
+                                  .skill__name= skillTitle
+        
+    section.section.map
+    include ../common/parts/footer
+    

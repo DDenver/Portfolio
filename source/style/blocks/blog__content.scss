@@ -1,0 +1,19 @@
+.blog__content{
+    @extend %clearfix;
+    background-color: $white;
+}
+
+.left__articles-title, .right__articles{
+    float: left;
+    
+}
+
+.left__articles-title{
+    width: 32.5%;  
+    padding: 40px 80px 40px 45px;
+}
+
+.right__articles{
+    width: 67.5%;
+    padding: 40px 110px 40px 20px;
+}

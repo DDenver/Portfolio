@@ -1,0 +1,27 @@
+.socials__footer{
+    margin-left: 12px;
+    margin-top: 20px;
+    margin-bottom: 23px;
+}
+
+.socials__item-footer{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-right: 26px;
+    text-align: center;
+}
+
+.socials__svg-footer{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    fill: rgba(#fff, 0.5);
+    transition: all, 0.3s;
+}
+
+.socials__link:hover{
+    .socials__svg-footer{
+        fill: #fff;
+    }
+}

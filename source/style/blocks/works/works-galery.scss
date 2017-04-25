@@ -1,0 +1,23 @@
+.works-galery{
+    @extend %clearfix;
+    background-color: $green;
+}
+
+.works-galery__left, .works-galery__right{
+    width: 50%;
+}
+
+.works-galery__left{
+    background-color: $green;
+    min-height: 100%;
+    float: left;
+}
+
+.works-galery__right{
+    background-image: url('../img/content/big_work.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+}

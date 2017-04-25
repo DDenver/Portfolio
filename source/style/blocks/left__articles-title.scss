@@ -1,0 +1,27 @@
+
+
+.articles-title__items{
+    min-width: 270px;
+}
+
+.articles-title__item{
+    text-align: right;
+    padding: 12px 18px 12px 0;
+    border-right: solid 3px $white;
+}
+
+.articles-title__item_active{
+    border-right: solid 3px $green-text;
+    color: $green-text;
+}
+
+
+.articles-title{
+    color: $main-fonts-color;
+    font-size: 16px;
+    line-height: 1.42;
+}
+
+.articles-title_active{
+    color: $green-text;
+}

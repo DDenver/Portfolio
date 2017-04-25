@@ -1,0 +1,27 @@
+.socials__item{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.socials{
+    position: absolute;
+    top: 30px;
+    display: inline-block;
+}
+
+.socials__svg{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    fill: #fff;
+    transition: all, 0.3s;
+}
+
+.socials__link:hover{
+    .socials__svg{
+        fill: #467b35;
+    }
+}
