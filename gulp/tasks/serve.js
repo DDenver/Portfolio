@@ -5,7 +5,7 @@ module.exports = function() {
     $.browserSync.init({
       open: false,
       server: $.config.root,
-      index: "welcome.html"
+      index: "index.html"
     });
 
     $.browserSync.watch([$.config.root + '/**/*.*', '!**/*.css'], $.browserSync.reload);
