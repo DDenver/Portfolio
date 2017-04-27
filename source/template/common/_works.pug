@@ -1,7 +1,7 @@
 .wrapper
     header.header
        .hero__bg
-            img(src="./assets/img/bg/header-bg.jpg", alt="").hero__bg-img
+            img(src="./assets/img/bg/header-bg.jpg", alt="header-bg").hero__bg-img
        ul.socials
             each item in ['vk', 'github', 'in']
                 li.socials__item
@@ -10,13 +10,13 @@
                         use(xlink:href=`assets/img/icons/sprite.svg#${item}`)
        a(href="#").hamburger
        a(href="#").down-arrow 
-            img(src="./assets/img/icons/arrow_down.svg", alt="").down-arrow__icon
+            img(src="./assets/img/icons/arrow_down.svg", alt="arrow_down").down-arrow__icon
        .hero__title
-            img(src="./assets/img/icons/portfolio_header.svg", alt="").section-title
+            img(src="./assets/img/icons/portfolio_header.svg", alt="portfolio_header").section-title
        .user.hero__user-block
             .user__photo
                 .user__photo-avatar
-                    img(src="./assets/img/content/user-avatar.jpg", alt="").user__avatar-img
+                    img(src="./assets/img/content/user-avatar.jpg", alt="user-avatar").user__avatar-img
             .user__name Владимир Астахов
             .user__desc Личный сайт веб-разработчика
     section.section.works
@@ -45,7 +45,7 @@
                             .works-tecnology
                                 | HTML , CSS, JAVASCRIPT
                             a(href="#").works__link
-                                img(src="./assets/img/icons/link.svg").works__link-pic
+                                img(src="./assets/img/icons/link.svg" alt="link").works__link-pic
                                 | Посмотреть сайт
             .works-galery__right
     section.section.reviews
@@ -59,7 +59,7 @@
             ul.reviews-block__items
                 li.reviews-block__item
                     .reviews-block__avatar
-                        img(src="./assets/img/content/reviewer-ava.jpg").reviews-block__avatar-img
+                        img(src="./assets/img/content/reviewer-ava.jpg" alt="reviewer-ava").reviews-block__avatar-img
                     .reviews-block__avatar-text
                         | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                     .reviews-block__avatar-name
@@ -67,7 +67,7 @@
                         p — основатель Loftschool
                 li.reviews-block__item
                     .reviews-block__avatar
-                        img(src="./assets/img/content/reviewer-ava.jpg").reviews-block__avatar-img
+                        img(src="./assets/img/content/reviewer-ava.jpg" alt="reviewer-ava").reviews-block__avatar-img
                     .reviews-block__avatar-text
                         | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                     .reviews-block__avatar-name

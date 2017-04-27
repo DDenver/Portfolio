@@ -1,7 +1,7 @@
 .wrapper
     header.welcome
        .welcome__bg
-            img(src="./assets/img/bg/header-bg.jpg", alt="").welcome__bg-img
+            img(src="./assets/img/bg/header-bg.jpg", alt="header-bg").welcome__bg-img
        .login-block
             .user-about.callback__title
                 .user-about__title
@@ -15,21 +15,21 @@
                 .login-form__line
                     label(class="login__choice login__choice-checkbox")
                         input(class="login__checkbox" type="checkbox" name="check" value="callback")
-                        .login__radio-fake
-                        .login__radio-title 
+                        span.login__radio-fake
+                        span.login__radio-title 
                             | Я человек
                 .login-form__line.login-form__line_margin 
                     .login-robot__check
                         | Вы точно не робот?
                     label.login__choice
                         input(class="login__radio" type="radio" name="radio" value="Yes")
-                        .login__radio-fake
-                        .login__radio-title 
+                        span.login__radio-fake
+                        span.login__radio-title 
                             | Да
                     label.login__choice
                         input(class="login__radio" type="radio" checked name="radio" value="No")
-                        .login__radio-fake
-                        .login__radio-title
+                        span.login__radio-fake
+                        span.login__radio-title
                             | Не уверен
                 .form__line
                     input(class="button" type="submit" value="На главную")
