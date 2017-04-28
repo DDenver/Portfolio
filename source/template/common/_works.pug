@@ -35,19 +35,24 @@
         .user-about.user-works
               .title(style="background-image: url('./assets/img/decor/works_header.png')").about__section-title
                 | Мои работы
-        .works-galery
-            .works-galery__left
-                .content
-                    .user-about.works-galery__left-content
-                        .user-about__title
-                            .subtitle
-                                | Сайт школы самообразования
-                            .works-tecnology
-                                | HTML , CSS, JAVASCRIPT
-                            a(href="#").works__link
-                                img(src="./assets/img/icons/link.svg" alt="link").works__link-pic
-                                | Посмотреть сайт
-            .works-galery__right
+
+
+    section.section.slider
+            .slider__desc
+                .slider__desc-info
+                    .user-about__title
+                        .subtitle Сайт школы онлайн образования
+                    .slider__desc-tecnology
+                         | HTML, css, javascript
+                    
+                    a(href="#").slider__desc-btn
+                        img(src="./assets/img/icons/link.svg" alt="link").slider__desc-pic
+                        | Посмотреть сайт
+            .slider__display
+                    img(src="./assets/img/content/big_work.jpg" alt="big_work").slider__display-pic
+            .slider__btns
+                    a(href="#").slider__btn.slider__btn_left
+                    a(href="#").slider__btn.slider__btn_right
     section.section.reviews
         a( href="#" class='arrow-up__link')
             svg(class='arrow-up')

@@ -1,5 +1,6 @@
-.works__link{
-    display: inline-block;
+.slider__desc-btn{
+    display: block;
+    margin: 0 auto;
     color: #fff;
     font-size: 16px;
     height: 45px;
@@ -13,7 +14,7 @@
     }
 }
 
-.works__link-pic{
+.slider__desc-pic{
     margin-right: 10px;
     position: relative;
     top: 5px;
