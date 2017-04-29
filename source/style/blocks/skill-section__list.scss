@@ -1,0 +1,33 @@
+.skill-section__list{
+    text-align: left;
+}
+
+.circles {
+  fill: none;
+  stroke-width: 21;
+}
+.circle__first {
+  stroke: #dfdcd5;
+}
+.circle__second {
+  stroke: #74a163;
+  stroke-dasharray: 90 282.6;
+  transition: all 1s;
+}
+
+.skills-section__item{
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  position: relative;
+}
+
+.skill__name{
+    color: #4e8839;
+    font-family: "roboto", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    width: 60px;
+    text-align: center;
+    @include centered();
+}

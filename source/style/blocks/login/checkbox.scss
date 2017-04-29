@@ -1,0 +1,110 @@
+
+.login__radio-fake, .login__radio-title{
+	display: inline-block;
+	position: relative;
+}
+
+.login__radio, .login__checkbox{
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	display: none;
+}
+
+.login__choice{
+    margin-right: 35px;
+    .login__radio-fake{
+        background-color: #fff;
+    }
+}
+
+.login__radio-fake{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: $green-date;
+	&:after{
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 0px;
+		height: 0px;
+		background-color: $green-date;
+		border-radius: 50%;
+		transition: 0.3s;
+	}
+}
+
+.login__radio:checked{
+	&+.login__radio-fake {
+        &+.login__radio-title{
+            color: $green-date;
+            transition: all, 0.3s;
+        }
+		&:after{
+			width: 8px;
+			height: 8px;
+		}
+	}
+    
+}
+
+.login__radio:checked{
+    &+.login__radio-title{
+        color: $green-date;
+    }
+}
+
+.login__choice-checkbox{
+	.login__radio-fake{
+		border-radius: 0;
+        background-color: $green-date;
+        border-radius: 2px;
+		&:after{
+			background: transparent;
+		}
+	}
+}
+
+
+.login__checkbox:checked{
+	& +.login__radio-fake{
+		&:after{
+			width: 9px;
+			height: 9px;
+			background: url("../img/icons/check.svg") 50% no-repeat transparent;
+			background-size: contain;
+		}
+	}
+}
+
+
+.login__radio-title{
+	margin-left: 10px;
+	position: relative;
+	top: -4px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+.login-form__line{
+    width: 220px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login-robot__check{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 15px 0 11px 0;
+}
+
+.login-form__line_margin {
+    margin-bottom: 28px;
+}

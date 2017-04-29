@@ -1,0 +1,25 @@
+.about {
+  display: flex;
+}
+
+.about__left, .about__right {
+  padding-bottom: 40px;
+  width: 50%;
+  position: relative;
+
+}
+
+.about__left {
+  background: $green;
+}
+
+.about__right {
+  background: $white;
+}
+
+.about__triangles {
+  position: absolute;
+  bottom: 100%;
+  text-align: none;
+}
+

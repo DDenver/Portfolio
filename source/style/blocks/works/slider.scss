@@ -1,0 +1,59 @@
+
+
+
+// slider styles
+.slider {
+  height: 100vh;
+  min-height: 650px;
+}
+
+
+.slider__btns {
+  min-height: 100px;
+  height: 100%;
+  display: flex;
+}
+
+.slider__btn {
+  min-height: 100%;
+  flex: 1;
+  &_left {
+    background: url('../img/content/up.jpg') center center no-repeat;
+    background-size: cover;
+  }
+  &_right {
+    background: url('../img/content/down.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.slider__display-pic {
+  min-width: 100%;
+  display: block;
+  max-height: 100%;
+}
+
+// flex alignment;
+.slider {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.slider__desc-info {
+  margin: auto;
+  width: 50%;
+}
+
+.slider__desc {
+  height: 100%;
+  display: flex;
+  background-color: $green;
+}
+
+.slider__display {
+  flex: 4;
+}
+
+.slider__btns {
+  flex: 1;
+}

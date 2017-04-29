@@ -1,0 +1,23 @@
+.user-about__title{
+        text-align: center;
+}
+
+.subtitle{
+    font-family: "sansus_webissimo", Arial, sans-serif;
+    color: $main-fonts-color;
+    font-size: 35px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    line-height: 1.2;
+    &:after{
+        content: "";
+        display: block;
+        height: 3px;
+        width: 90px;
+        background-color: $main-fonts-color;
+         @include centered(x);
+        bottom: 0;
+    }
+}
