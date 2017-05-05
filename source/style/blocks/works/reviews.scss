@@ -1,15 +1,28 @@
 .reviews{
-    height: 1355px;
+    height: 100%;
+    padding-bottom: 22.3%;
     background-color: #b9b9b9;
     background-image: url('../../assets/img/bg/reviews.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    @include laptop{
+        padding-bottom: 31.3%;
+    }
+    @include tablets{
+        padding-bottom: 42.3%;
+    }
+    @include phones{
+        padding-bottom: 120.3%;
+    }
 }
 
 .reviews__title{
     width: 500px;
     line-height: 1.2;
+    @include phones{
+        width: 340px;
+    }
     
 }
 

@@ -3,14 +3,19 @@
     color: $main-title-color;
     font-size: 63px;
     text-transform: uppercase;
-    padding: 45px 80px;
+    padding: 16.75% 18.83%;
     display: inline-block;
     position: relative;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     margin: 0 auto;
-
+    @include laptop{
+        padding: 12.75% 14.83%;
+    }
+    @include phones{
+        padding: 12.75% 0;
+    }
     &:after{
         content: "";
         display: block;

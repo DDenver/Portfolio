@@ -1,17 +1,29 @@
 .reviews-block{
     width: 800px;
     margin: 0 auto;
+    @include tablets{
+        width: 100%;
+    }
 }
 
 .reviews-block__items{
     margin-bottom: 60px;
+    @include phones{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .reviews-block__item{
-    width: 398px;
-    padding-left: 20px;
+    width: 48%;
+    padding-left: 2%;
     display: inline-block;
     vertical-align: top;
+    @include phones{
+        margin-bottom: 35px;
+        width: 100%;
+
+    }
 }
 
 .reviews-block__avatar{

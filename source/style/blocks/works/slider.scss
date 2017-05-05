@@ -1,18 +1,15 @@
 
-
+/*
 
 // slider styles
 .slider {
   height: 100vh;
   min-height: 650px;
+  @include tablets{
+    min-height: 1010px;
+  }
 }
 
-
-.slider__btns {
-  min-height: 100px;
-  height: 100%;
-  display: flex;
-}
 
 .slider__btn {
   min-height: 100%;
@@ -28,15 +25,18 @@
 }
 
 .slider__display-pic {
-  min-width: 100%;
+  width: 100%;
   display: block;
-  max-height: 100%;
+  height: 100%;
 }
 
 // flex alignment;
 .slider {
   display: flex;
   flex-flow: column wrap;
+  @include tablets{
+    flex-flow: column;
+  }
 }
 
 .slider__desc-info {
@@ -48,12 +48,104 @@
   height: 100%;
   display: flex;
   background-color: $green;
+  width: 50%;
+  @include tablets{
+    width: 100%;
+  }
 }
 
 .slider__display {
+  width: 50%;
   flex: 4;
+  @include tablets{
+    width: 100%;
+  }
 }
 
 .slider__btns {
   flex: 1;
+  min-height: 8.33%;
+  height: 100%;
+  display: flex;
+  width: 50%;
+  @include tablets{
+    width: 100%;
+  }
+}
+
+*/
+
+
+.slider__desc{
+  background-color: $green;
+  width: 50%; /* исправить на 100%*/
+  display: flex;
+  height: 100%;
+  @include tablets{
+    width: 100%;
+    order: 1;
+  }
+}
+
+.slider__desc-info {
+  margin: auto;
+  width: 50%;
+  @include tablets{
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 55px;
+  }
+}
+
+.slider__display{
+  width: 50%;/* исправить на 100%*/
+  // display: flex;
+  flex-direction: column; /*убрать*/
+  flex: 4;
+  @include tablets{
+    width: 100%;
+    order: 0;
+  }
+}
+
+.slider__display-pic {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.slider__btn_left, .slider__btn_right{
+  width: 50%;
+  height: 100%;
+  display: block;
+}
+
+.slider__btn_left{
+  background: url('../img/content/up.jpg') center center no-repeat;
+  background-size: cover;
+}
+.slider__btn_right{
+  background: url('../img/content/down.jpg') center center no-repeat;
+  background-size: cover;
+}
+.slider{
+  display: flex;
+  align-items: stretch;
+  flex-flow: column wrap;
+  height: 100vh;
+  min-height: 750px;
+  @include tablets{
+    flex-flow: column nowrap;
+    height: auto;
+  }
+}
+
+.slider__btns {
+  display: flex;
+  height: 100%;
+  flex: 2;
+  @include tablets{
+    order: 2;
+    height: 214px;
+  }
 }

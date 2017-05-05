@@ -1,8 +1,16 @@
 .user-about{
     text-align: center;
-    width: 443px;
+    width: 70.83%;
     margin: 0 auto;
+    @include phones{
+        width: 98%;
+    }
 }
 .user-about__picture{
     margin-bottom: 20px;
+    width: 100%;
+}
+
+.user__photo-img{
+    width: 100%;
 }

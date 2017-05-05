@@ -9,6 +9,13 @@
     background-color: $green-text;
     border-radius: 23px;
     transition: all, 0.3s;
+    @include tablets{
+        padding: 9px 19px 9px 19px; 
+    }
+    @include phones{
+        width: 216px;
+        height: 50px;
+    }
     &:hover{
         background-color: $green-date;
     }
@@ -17,5 +24,5 @@
 .slider__desc-pic{
     margin-right: 10px;
     position: relative;
-    top: 5px;
+    top: 5px; 
 }
