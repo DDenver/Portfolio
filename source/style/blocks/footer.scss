@@ -9,12 +9,31 @@
     background-color: rgba($main-title-color, .85);
     padding: 30px 50px 25px 30px;
     @extend %clearfix;
-    
+    @include phones{
+        padding: 15px 10px 15px 10px;
+    }
+}
+
+.footer__top{
+    // @extend %clearfix;
+    display: flex;
+    @include tablets{
+        flex-wrap: wrap;
+    }
+    @include phones{
+        flex-flow: column nowrap;
+    }
 }
 
 .footer__top-right, .footer__top-center, .footer__top-left{
-    float: left;
+    // float: left;
     width: 33%;
+}
+
+.footer__top-right{
+    @include phones{
+        text-align: center;
+    }
 }
 
 .footer__top-left{
@@ -22,18 +41,42 @@
     color: #e4e4e5;
     font-size: 16px;
     font-weight: 300;
-    padding-right: 67px;
+    padding-right: 5%;
+    @include tablets{
+        width: 50%;
+    }
+    @include phones{
+        width: 100%;
+        text-align: center;
+        padding: 0 0 15px 0;
+    }
 }
 
 .footer__top-center{
     padding: 0 7px;
     border-right: solid 1px rgba(#fff, .2);
     border-left: solid 1px rgba(#fff, .2);
+    @include tablets{
+        width: 50%;
+        border: none;
+    } 
+
+    @include phones{
+        border-top: solid 1px rgba(#fff, .2);
+        border-bottom: solid 1px rgba(#fff, .2);
+        width: 100%;
+        padding: 0;
+        padding-top: 15px;
+        text-align: center;
+    }
 }
 
 .footer-menu__item{
-    padding: 0 12px;
+    padding: 0 6px;
     display: inline-block;
+    @include phones{
+        padding: 0 5px;
+    }
     .footer-menu__link{
         color: #f3f3f3;
         font-family: "roboto", Arial, sans-serif;
@@ -53,8 +96,13 @@
     color: #a1a7a5;
     font-size: 16px;
     font-weight: 300;
-    padding-right: 67px;
+    
     span{
         font-weight: 600;
+    }
+
+    @include tablets{
+        width: 100%;
+        padding-left: 0;
     }
 }

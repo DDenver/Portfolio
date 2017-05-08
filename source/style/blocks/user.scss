@@ -25,9 +25,16 @@
 	color: #ffffff;
 	font-size: 35px;
     font-weight: 500;
+    @include phones{
+    	width: 100%;
+		font-size: 30px;
+    }
 }
 
 .user__desc {
 	font-weight: 400;
 	color: #ffffff;
+	@include phones{
+		font-size: 20px;
+	}
 }

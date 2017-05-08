@@ -1,6 +1,9 @@
 .blog{
     @extend %clearfix;
     padding-bottom: 185px;
+    @include phones{
+        padding-bottom: 335px;
+    }
 }
 
 .blog__triangle-right, .blog__triangle-left{

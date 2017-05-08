@@ -2,6 +2,9 @@
     text-align: center;
     height: 37px;
     background-color: rgba(108, 156, 90, 0.851);
+    @include phones{
+        height: 66px;
+    }
 }
 
 .copiright{

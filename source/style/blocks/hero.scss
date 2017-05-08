@@ -8,6 +8,7 @@
 .hero__bg-img{
    width: 100%;
    min-height: 100vh;
+
 }
 
 .hero__title {
@@ -15,8 +16,17 @@
   text-align: center;
   width: 100%;
   opacity: 0.12;
+  .section-title{
+     width: 90%;
+  }
+  @include phones{
+    display: none;
+  }
 }
 
 .hero__user-block {
   @include centered();
+  @include phones{
+    width: 88%;
+  }
 }

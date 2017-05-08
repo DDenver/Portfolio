@@ -4,6 +4,9 @@
     @include centered();
     background-color: rgba($welcome-green, .60);
     border-radius:0 0 7px 7px;
+    @include phones{
+        width: 92%;
+    }
 }
 
 .login-title{

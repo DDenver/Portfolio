@@ -33,6 +33,10 @@
     font-weight: 500;
     opacity: 0.851;
     transition: all, .3s;
+
+    @include tablets{
+        padding: 14px 27px 13px 33.85px;
+    }
     &:hover{
         background-color: $green-text;
     }

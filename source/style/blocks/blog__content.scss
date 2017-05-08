@@ -1,19 +1,40 @@
 .blog__content{
-    @extend %clearfix;
     background-color: $white;
+    display: flex;
 }
 
 .left__articles-title, .right__articles{
-    float: left;
-    
+
 }
 
 .left__articles-title{
     width: 32.5%;  
-    padding: 40px 80px 40px 45px;
+    padding: 3.33% 6.667% 3.33% 3.75%;
+    @include desktop{
+        width: 40%;
+    }
+    @include tablets{
+        display: none;
+    }
+
 }
 
 .right__articles{
     width: 67.5%;
-    padding: 40px 110px 40px 20px;
+    padding: 3.33% 9.167% 3.33% 1.1667%;
+    @include desktop{
+        width: 60%;
+        padding-right: 4%;
+    }
+    @include tablets{
+        width: 93.75%;
+        padding-right: 3.125%;
+        padding-left: 3.125%;
+    }
+}
+
+.articles__title{
+    @include tablets{
+        text-align: left;
+    }
 }

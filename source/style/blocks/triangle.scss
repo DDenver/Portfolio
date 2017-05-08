@@ -10,9 +10,39 @@
 
     &_white {
       fill: $white;
+      @include tablets{
+        fill: $green;
+      }
     }
 
   }
 }
 
+.blog{
+  .triangle{
+    @include tablets{
+        fill: $white;
+    }
+  }
+}
 
+
+.triangles{
+  position: relative;
+}
+
+.triangles__right, .triangles__left{
+  width: 50%;
+  float: left;
+}
+
+.triangles__left{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.triangles__right{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

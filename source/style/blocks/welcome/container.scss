@@ -14,6 +14,9 @@
 .welcome__user-name{
     font-size: 28px;
     width: 255px;
+    @include phones{
+        width: 100%;
+    }
 }
 
 .welcome__ueser-dest{

@@ -20,6 +20,7 @@ html
     script(src="/assets/js/foundation%=suffix=%.js%=version=%" defer)
     script(src="/assets/js/app%=suffix=%.js%=version=%" defer)
 
+    
     <!--[if lt IE 9]>
     script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
     script(src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js")
@@ -27,3 +28,4 @@ html
 
   body
     block content
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnzsgQQCtYocdBrDEOR4C8pFLBUB44XHA&callback=initMap")

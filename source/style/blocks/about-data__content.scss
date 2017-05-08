@@ -9,6 +9,9 @@
     position: relative;
     line-height: 1.2;
     text-align: left;
+     @include tablets{
+        text-align: center;
+    }
 }
 
 .skill-section{

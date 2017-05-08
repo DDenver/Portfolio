@@ -1,7 +1,14 @@
 .about-data{
     text-align: center;
-    width: 550px;
-    margin: 0 auto;
+    // width: 50%;
+    margin-left: 35px;
+    @include tablets{
+        width: 70.83%;
+        margin: 0 auto;
+    }
+    @include phones{
+        width: 98%;
+    }
 }
 
 .about-user-info__title{

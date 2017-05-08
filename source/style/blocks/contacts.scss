@@ -1,0 +1,43 @@
+.contacts{
+    position: absolute;
+    @include centered();
+    width: 380px;
+    height: 310px !important;
+    background-color: rgba(#fff,0.85) !important;
+    @include phones{
+        @include centered(x);
+        top: 0;
+        width: 420px !important;
+    }
+}
+.contacts__title{
+    margin-top: 30px;
+}
+
+.contacts__item{
+    display: block;
+    width: 300px;
+    height: 27px;
+    margin-left: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.contacts__link{
+    width: 300px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    font-size: 16px;
+    font-weight: 500;
+    color: #455a64;
+}
+
+.contacts__svg{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    fill: #6c9c5a;
+    margin-right: 10px;
+    transition: all, 0.3s;
+}
