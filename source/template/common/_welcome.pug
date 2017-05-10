@@ -2,11 +2,9 @@
 
 .wrapper
     header.welcome
-       .welcome__bg
-            img(src="./assets/img/bg/header-bg.jpg", alt="header-bg").welcome__bg-img
        a(href="login.html").welcome-admin__link
            | Авторизоваться
-       .container
+       .container.animated.flipInY 
             ul.socials.welcome__socials
                     each item in ['vk', 'github', 'in']
                         li.socials__item

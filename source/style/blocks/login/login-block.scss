@@ -1,7 +1,14 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .login-block{
     width: 378px;
     height: 426px;
-    @include centered();
+    // @include centered(); 
     background-color: rgba($welcome-green, .60);
     border-radius:0 0 7px 7px;
     @include phones{
