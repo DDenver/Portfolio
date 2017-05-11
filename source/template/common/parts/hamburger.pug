@@ -1,0 +1,11 @@
+#hamburger
+    span
+    span
+    span
+    span
+#overlay.overlay
+    nav.overlay-menu
+        ul
+            each item, adress in { 'works.html' : 'Мои работы', 'about.html' : 'Обо мне', 'blog.html' : 'Блог', 'login.html' : 'Авторизация'}
+                li.footer-menu__item
+                    a(href=`${adress}` class='hamburger__link')=item

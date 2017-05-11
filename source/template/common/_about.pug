@@ -10,7 +10,7 @@ script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js")
                     a( href="#" class=`socials__link socials__link_${item}`)
                       svg(class=`socials__svg`)
                         use(xlink:href=`assets/img/icons/sprite.svg#${item}`)
-       a(href="#").hamburger
+       include ../common/parts/hamburger 
        a(href="#").down-arrow 
             img(src="./assets/img/icons/arrow_down.svg", alt="arrow_down").down-arrow__icon
        .hero__title
@@ -95,3 +95,4 @@ script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js")
     include ../common/parts/footer 
 
 script(src="/assets/js/water.js")
+script(src="/assets/js/google-map.js")

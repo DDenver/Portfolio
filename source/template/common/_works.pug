@@ -8,7 +8,7 @@
                     a( href="#" class=`socials__link socials__link_${item}`)
                       svg(class=`socials__svg`)
                         use(xlink:href=`assets/img/icons/sprite.svg#${item}`)
-       a(href="#").hamburger
+       include ../common/parts/hamburger 
        a(href="#").down-arrow 
             img(src="./assets/img/icons/arrow_down.svg", alt="arrow_down").down-arrow__icon
        .hero__title
