@@ -1,7 +1,8 @@
 .wrapper
+    
     header.header
-       .hero__bg
-            img(src="./assets/img/bg/header-bg.jpg", alt="header-bg").hero__bg-img
+       .Background
+          canvas(class="Background-canvas")
        ul.socials
             each item in ['vk', 'github', 'in']
                 li.socials__item
@@ -87,3 +88,5 @@
               .articles__img
                 img(src='./assets/img/content/article-css.jpg' alt="article-css")
     include ../common/parts/footer
+
+script(src="/assets/js/water.js")

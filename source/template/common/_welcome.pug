@@ -2,6 +2,8 @@
 
 .wrapper
     header.welcome
+       .Background
+            canvas(class="Background-canvas")
        a(href="login.html").welcome-admin__link
            | Авторизоваться
        .container.animated.flipInY 
@@ -24,3 +26,5 @@
                             a( href=`${adress}` class=`welcome-menu__link`)=item
     .welcome__copiright
         | © Владимир Астахов | Создано с любовью в LoftSchool | 2016
+
+script(src="/assets/js/water.js")
