@@ -2,11 +2,11 @@
 
 .wrapper
     header.welcome
-       .welcome__bg
-            img(src="./assets/img/bg/header-bg.jpg", alt="header-bg").welcome__bg-img
+       .Background
+            canvas(class="Background-canvas")
        a(href="login.html").welcome-admin__link
            | Авторизоваться
-       .container
+       .container.animated.flipInY 
             ul.socials.welcome__socials
                     each item in ['vk', 'github', 'in']
                         li.socials__item
@@ -26,3 +26,5 @@
                             a( href=`${adress}` class=`welcome-menu__link`)=item
     .welcome__copiright
         | © Владимир Астахов | Создано с любовью в LoftSchool | 2016
+
+script(src="/assets/js/water%=suffix=%.js%=version=%") 

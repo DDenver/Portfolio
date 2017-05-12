@@ -6,8 +6,10 @@ $main-fonts-color: #566358;
 $green-text: #4e8839;
 $green-date: #6c9c5a;
 $welcome-green:#122620;
+$hamb-bgc: #5e8950;
 
 //mixins
+@import "helpers/animate";
 @import "helpers/mixins";
 
 //layout setups

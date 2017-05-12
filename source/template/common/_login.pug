@@ -1,8 +1,11 @@
+
 .wrapper
-    header.welcome
-       .welcome__bg
-            img(src="./assets/img/bg/header-bg.jpg", alt="header-bg").welcome__bg-img
-       .login-block
+    
+    header.welcome.login
+        .Background
+            canvas(class="Background-canvas")
+        
+        .login-block.animated.flipInY 
             .user-about.callback__title
                 .user-about__title
                     .subtitle.login-title
@@ -27,13 +30,18 @@
                         span.login__radio-title 
                             | Да
                     label.login__choice
-                        input(class="login__radio" type="radio" checked name="radio" value="No")
+                        input(class="login__radio" type="radio" name="radio" value="No")
                         span.login__radio-fake
                         span.login__radio-title
                             | Не уверен
                 .form__line
-                    input(class="button" type="submit" value="На главную")
+                    .login__button-box
+                        a( href='index.html' class=`login__button`) На главную
+                    //- input(class="button" type="submit" value="На главную")
                     input(class="form__button" type="submit" value="Войти")
                 
     .welcome__copiright
         | © Владимир Астахов | Создано с любовью в LoftSchool | 2016
+
+
+script(src="/assets/js/water%=suffix=%.js%=version=%")

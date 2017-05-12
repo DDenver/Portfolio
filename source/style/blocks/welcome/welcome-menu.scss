@@ -13,11 +13,19 @@
     &:first-child{
         border-left: none;
         border-radius: 0 0 0 7px;
+        .welcome-menu__link{
+            border-left: none;
+            border-radius: 0 0 0 7px;
+        }
     }
 
     &:last-child{
         border-right: none; 
         border-radius: 0 0 7px 0;
+        .welcome-menu__link{
+            border-left: none;
+            border-radius: 0 0 7px 0;
+        }
     } 
 }
 

@@ -1,14 +1,14 @@
 .wrapper
     header.header
-       .hero__bg
-            img(src="./assets/img/bg/header-bg.jpg", alt="header-bg").hero__bg-img
+       .Background
+          canvas(class="Background-canvas")
        ul.socials
             each item in ['vk', 'github', 'in']
                 li.socials__item
                     a( href="#" class=`socials__link socials__link_${item}`)
                       svg(class=`socials__svg`)
                         use(xlink:href=`assets/img/icons/sprite.svg#${item}`)
-       a(href="#").hamburger
+       include ../common/parts/hamburger 
        a(href="#").down-arrow 
             img(src="./assets/img/icons/arrow_down.svg", alt="arrow_down").down-arrow__icon
        .hero__title
@@ -79,3 +79,5 @@
                     input(class="button" type="submit" value="Отправить")
                     input(class="form__button" type="reset" value="Очистить")
     include ../common/parts/footer
+
+script(src="/assets/js/water%=suffix=%.js%=version=%")

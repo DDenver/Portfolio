@@ -1,17 +1,4 @@
-console.log('sss');
-$(function(){
-    console.log('dolll');
-        function initMap() {
-            console.log('dada');
-            var uluru = {lat: -25.363, lng: 131.044};
-            var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-            });
-            var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-            });
-        }
-} );
-
+$('#hamburger').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
