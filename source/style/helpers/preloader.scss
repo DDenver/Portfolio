@@ -1,0 +1,106 @@
+
+#preloader {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: url('../img/bg/forest_prel_bg.jpg');
+  width: 64px;
+  height: 64px;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background-image: url('../img/bg/forest_prel_bg.jpg');
+  background-color: $hamb-bgc;
+}
+
+.preloader__spinner {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preloader__percents {
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.preloader__animation {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+
+.hero{
+  max-height: 20px; 
+  margin: 0px auto;
+  text-align: center;
+}
+
+
+.wave {
+  animation: moveTheWave 2.0s infinite cubic-bezier(.75, .3, .4, .75);
+  stroke-dasharray: 100 100;
+}
+ 
+.wave2 {
+  animation: moveTheWave2 2.2s infinite cubic-bezier(.80, .3, .4, .80);
+  stroke-dasharray: 100 112;
+}
+
+.wave3 {
+  animation: moveTheWave3 2.4s infinite cubic-bezier(.85, .3, .4, .85);
+  stroke-dasharray: 100 125;
+} 
+
+@keyframes moveTheWave {
+
+  0% {
+    stroke-dashoffset: 100;
+  }
+
+  100% {
+    stroke-dashoffset: -100;
+  }
+  
+}
+
+@keyframes moveTheWave2 {
+
+  0% {
+    stroke-dashoffset: 112;
+  }
+
+  100% {
+    stroke-dashoffset: -112;
+  }
+  
+}
+
+@keyframes moveTheWave3 {
+
+  0% {
+    stroke-dashoffset: 125;
+  }
+
+  100% {
+    stroke-dashoffset: -125;
+  }
+  
+}
