@@ -34,17 +34,14 @@
         .left__articles-title
           ul.articles-title__items
             li.articles-title__item.articles-title__item_active
-              a(href="#").articles-title.articles-title_active
-                | Самое важное в SASS
+              | Самое важное в SASS
             li.articles-title__item
-              a(href="#").articles-title
-                | Приёмы в вёрстке, без которых не обходится ни один сайт
+              | Приёмы в вёрстке, без которых не обходится ни один сайт
             li.articles-title__item
-              a(href="#").articles-title
-                | Самое важное в SASS
+              | Самое важное в SASS
             li.articles-title__item
-              a(href="#").articles-title
-                | Приёмы в вёрстке, без которых не обходится ни один сайт
+              | Приёмы в вёрстке, без которых не обходится ни один сайт
+          .articles-menu__btn
         .right__articles
           ul.articles__items
             li.articles__item
@@ -89,4 +86,5 @@
                 img(src='./assets/img/content/article-css.jpg' alt="article-css")
     include ../common/parts/footer
 
-script(src="/assets/js/water%=suffix=%.js%=version=%")
+script(src="/assets/js/water%=suffix=%.js%=version=%" async)
+script(src="/assets/js/scroll%=suffix=%.js%=version=%" defer)

@@ -1,25 +1,86 @@
 .blog__content{
     background-color: $white;
-    display: flex;
+    // display: flex;
+    @extend %clearfix;
+    position: relative;
+    @include tablets{
+        position: static;
+        .left__articles-title_active{
+            left: 0;
+            z-index: 10;
+        }
+    }
+    @include phones{
+        position: static;
+        .left__articles-title_active{
+            left: 0;
+            z-index: 10;
+        }
+    }
 }
 
-.left__articles-title, .right__articles{
-
+.left__articles-title_active{
+    left: 32.5%;
+    .articles-menu__btn{
+        left: 32.5%
+    }
 }
 
 .left__articles-title{
+    float: left;
     width: 32.5%;  
     padding: 3.33% 6.667% 3.33% 3.75%;
+
+    .articles-menu__btn{
+        width: 30px;
+        height: 45px;
+        border-radius: 0 30px 30px 0;
+        background-color: $green-date;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.3s;
+        left: -15px;
+        display: none;
+        opacity: 0.85;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+
+    
     @include desktop{
         width: 40%;
     }
     @include tablets{
-        display: none;
+        position: fixed;
+        width: 50%;
+        left: -50%;
+        background-color: $green-date;
+        opacity: 0.85;
+        top: 0;
+        bottom: 0;
+        transition: all, 0.5s;
+        .articles-menu__btn{
+            display: block;
+            transition: all, 0.5s;
+        }
+        .articles-menu__btn_active{
+            left: calc(50% - 18px);
+        }
+    }
+    @include phones{
+        width: 70%;
+        left: -70%;
+        .articles-menu__btn_active{
+            left: calc(70% - 18px);
+        }
     }
 
 }
 
 .right__articles{
+    float: right;
     width: 67.5%;
     padding: 3.33% 9.167% 3.33% 1.1667%;
     @include desktop{

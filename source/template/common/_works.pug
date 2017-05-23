@@ -1,3 +1,5 @@
+
+
 .wrapper
     header.header
        .Background
@@ -17,9 +19,9 @@
             .user__photo
                 .user__photo-avatar
                     img(src="./assets/img/content/user-avatar.jpg", alt="user-avatar").user__avatar-img
-            .user__name Владимир Астахов
+            .user__name Дударев Денис
             .user__desc Личный сайт веб-разработчика
-    section.section.works 
+    section.section.works#down 
         .blog__triangle-left
             svg(
                 viewbox="0 0 1000 100" 
@@ -36,7 +38,7 @@
               .title(style="background-image: url('./assets/img/decor/works_header.png')").about__section-title
                 | Мои работы
 
-    include ../common/parts/slider
+        include ../common/parts/slider
     
     section.section.reviews
         a( href="#" class='arrow-up__link')
@@ -80,4 +82,6 @@
                     input(class="form__button" type="reset" value="Очистить")
     include ../common/parts/footer
 
-script(src="/assets/js/water%=suffix=%.js%=version=%")
+script(src="/assets/js/water%=suffix=%.js%=version=%" async)
+script(src="/assets/js/anmtxt%=suffix=%.js%=version=%" defer)
+script(src="/assets/js/slider%=suffix=%.js%=version=%" defer)     

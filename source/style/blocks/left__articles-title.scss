@@ -8,19 +8,26 @@
     text-align: right;
     padding: 12px 18px 12px 0;
     border-right: solid 3px $white;
+    color: $main-fonts-color;
+    font-size: 16px;
+    line-height: 1.42;
+    cursor: pointer;
+    @include tablets{
+        color: rgba(#fff, 0.7);
+        border: none;
+    }
 }
 
 .articles-title__item_active{
     border-right: solid 3px $green-text;
     color: $green-text;
+     @include tablets{
+        color:#fff;
+        opacity: 1;
+        border: none;
+    }
 }
 
-
-.articles-title{
-    color: $main-fonts-color;
-    font-size: 16px;
-    line-height: 1.42;
-}
 
 .articles-title_active{
     color: $green-text;

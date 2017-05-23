@@ -1,33 +1,32 @@
-//- section.section.slider
-//-             .slider__desc
-//-                 .slider__desc-info
-//-                     .user-about__title
-//-                         .subtitle Сайт школы онлайн образования
-//-                     .slider__desc-tecnology
-//-                          | HTML, css, javascript
-                    
-//-                     a(href="#").slider__desc-btn
-//-                         img(src="./assets/img/icons/link.svg" alt="link").slider__desc-pic
-//-                         | Посмотреть сайт
-//-             .slider__display
-//-                     img(src="./assets/img/content/big_work.jpg" alt="big_work").slider__display-pic
-//-             .slider__btns
-//-                     a(href="#").slider__btn.slider__btn_left
-//-                     a(href="#").slider__btn.slider__btn_right
 
-section.section.slider
-            .slider__desc
-                .slider__desc-info
-                    .user-about__title
-                        .subtitle Сайт школы онлайн образования
-                    .slider__desc-tecnology
-                         | HTML, css, javascript
-                    
-                    a(href="#").slider__desc-btn
-                        img(src="./assets/img/icons/link.svg" alt="link").slider__desc-pic
-                        | Посмотреть сайт
-            .slider__display
-                img(src="./assets/img/content/big_work.jpg" alt="big_work").slider__display-pic
-            .slider__btns
-                a(href="#").slider__btn.slider__btn_left
-                a(href="#").slider__btn.slider__btn_right
+.works__content
+    .works__left
+        .works-slider__content
+            .works-slider__content-wrapper
+                .works-slider__display
+                    img(src="" alt="" class="works-slider__display-pic")
+                .works-slider__item-about
+                    .works__subtitle
+                        .subtitle
+                    .works__content-desc
+                    .works__content-btn
+                        a(href="#").slider__desc-btn
+                            img(src="./assets/img/icons/link.svg" alt="link").slider__desc-pic
+                            | Посмотреть сайт
+						
+    .works__right
+        .works-slider
+            .works-slider__controls
+                a(href="#" class="works-slider__control-btn works-slider__control-btn_left")
+                    ul(class="works-slider__control-list")
+                        li(data-full="./assets/img/content/slider/1.png" data-title='Агентсво интернет решений "Loft"' data-skills="node" data-link="http://itloft.ru/" class="works-slider__control-item")
+                            img(src="./assets/img/content/slider/1.png" class="works-slider___control-img")
+                        li(data-full="./assets/img/content/slider/2.png" data-title='Школа онлай-образования "LoftSchool"' data-skills="html5, CSS3, javascript, php" data-link="http://loftschool.com/" class="works-slider__control-item")
+                            img(src="./assets/img/content/slider/2.png" class="works-slider___control-img")
+                        li(data-full="./assets/img/content/slider/3.png" data-title='Портал обучающих уроков "LoftBlog"' data-skills="Ruby on Rails, javascript, RESTful" data-link="http://loftblog.ru/" class="works-slider__control-item")
+                            img(src="./assets/img/content/slider/3.png" class="works-slider___control-img")
+                        li(data-full="./assets/img/content/slider/4.png" data-title='Сайт "Атма йога"' data-skills="UX, design, seo" data-link="http://atmayoga.ru/" class="works-slider__control-item")
+                            img(src="./assets/img/content/slider/4.png" class="works-slider___control-img")
+                a(href="#" class="works-slider__control-btn works-slider__control-btn_right")
+
+
