@@ -4,12 +4,12 @@ $('#hamburger').click(function() {
 });
 
 
-// $('.down-arrow').on('click', function(e) {
-// 		var display = $('.wrapper')
-//         e.preventDefault();
-//         console.log('yes');
+$('.down-arrow').on('click', function(e) {
+		var offset = 0;
+        e.preventDefault();
+        $('html, body').animate ({
+            scrollTop: $('#down').offset ().top - offset
+        }, 500);
 
-// });
-// var scrollMenu = require('./scroll');
-// scrollMenu();
+});
 

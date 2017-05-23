@@ -12,7 +12,6 @@ var Slider = function(container) {
         duration    = 500,
 	    flag        = true,
         _that = this;
-    console.dir(this);
 	var timeout;
 
     _that.counter = 0;

@@ -89,7 +89,7 @@ $(function () {
   });
 
   $.when(deferred, deferred2).done(function(){
-    console.log('РћР±Р° РѕР±СЉРµРєС‚Р° РІ СЃРѕСЃС‚РѕСЏРЅРёРё resolve');
+    console.log('Оба объекта в состоянии resolve');
   });
 
 });
