@@ -14,7 +14,7 @@ var Slider = function(container) {
         _that = this;
 	var timeout;
 
-    _that.counter = 0;
+    this.counter = 0;
 
     // private
     // Генерация разметки кнопки следующий слайд
